@@ -83,7 +83,7 @@ func MetricsInterceptor(ctx context.Context, req interface{}, info *grpc.UnarySe
 		Token:       influxDBToken,
 		Org:         influxDBOrg,
 		Bucket:      influxDBBucket,
-		Measurement: "gRPCMetrics",
+		Measurement: "example-gRPC-opensource",
 		Tags:        map[string]string{"endpoint": methodName, "ip_address": ipAddress, "user_agent": userAgent},
 		Fields: map[string]interface{}{
 			"duration":      duration.Seconds(),
