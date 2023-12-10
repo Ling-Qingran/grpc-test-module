@@ -1,4 +1,4 @@
-module grpc-test-module
+module github.com/Ling-Qingran/grpc-test-module
 
 go 1.20
 
